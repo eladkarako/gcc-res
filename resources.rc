@@ -1,0 +1,35 @@
+#include <winuser.h>
+
+
+// icon
+100 ICON "icon.ico"
+
+
+// version info
+1 VERSIONINFO
+FILEVERSION     1,32,0,0
+PRODUCTVERSION  1,32,0,0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "Aria2"
+            VALUE "FileDescription", "The Ultra Fast Download Utility (https://aria2.github.io)"
+            VALUE "FileVersion", "1.32.0.0"
+            VALUE "InternalName", "aria2c"
+            VALUE "LegalCopyright", "foo"
+            VALUE "OriginalFilename", "aria2c.exe"
+            VALUE "ProductName", "Aria2"
+            VALUE "ProductVersion", "1.32.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04E4
+    END
+END
+
+
+// manifest
+1 RT_MANIFEST "manifest.manifest"
